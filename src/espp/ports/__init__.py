@@ -1,0 +1,2 @@
+"""External dependency interfaces (ports)."""
+
