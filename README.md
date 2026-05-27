@@ -39,6 +39,10 @@ Most ESPP calculators overstate outcomes by ignoring timing details (reference p
 
 ## Quick start
 
+**Try it online:** [https://espp-return-calculator.streamlit.app](https://espp-return-calculator.streamlit.app)
+
+Or run locally:
+
 ```bash
 cd "/Users/jeffrey.patino@optum.com/Library/CloudStorage/OneDrive-UHG/Documents/Side Projects/GitHub/espp-return-calculator"
 python -m venv .venv
@@ -92,7 +96,7 @@ espp-calc \
 
 Recurring backtests always use period-start reference pricing and use the close on the last business day on or before cycle start.
 Cycle start months are derived from cadence: monthly uses every month, quarterly uses Jan/Apr/Jul/Oct, and semiannual uses Jan/Jul.
-Use `--first-purchase-date` and `--last-purchase-date` as boundary anchors (typically Jan 1 / Jul 1), both on the first day of a month. Each boundary represents the offering period leading up to that date; purchase execution is modeled at the last business day before the boundary.
+Use `--first-purchase-date` and `--last-purchase-date` as boundary anchors (typically Jan 1 / Jul 1), both on the first day of a month. Each boundary represents the offering period leading up to that [...]
 Recurring backtests assume shares are sold immediately at delivery (no fixed hold-days parameter).
 Salary raises are modeled as taking effect each March.
 
@@ -144,15 +148,3 @@ Notable areas this project emphasizes:
 - `src/espp/interfaces/cli.py`: command line interface
 - `src/espp/interfaces/streamlit_app.py`: Streamlit web UI
 - `tests/`: unit tests
-
-
-
-
-
-
-
-
-
-
-
-
